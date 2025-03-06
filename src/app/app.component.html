@@ -228,8 +228,11 @@
       <h1>Hello from {{ title }}</h1>
       <img [src]="logo" width="200" height="200" (click)="openBridgeLabz()" style="cursor:pointer;">
       <p>Congratulations Udit Patel! Your app is running. 🎉</p>
+      <div>
       <label >Enter your name </label>
-      <input type="text" [(ngModel)]="username" placeholder="username">
+      <input type="text" (input)="onInput($event)" [(ngModel)]="username" placeholder="username">
+      </div>
+      <p class="error">{{this.nameError}}</p>
 
       <p>Your name is {{username}}</p>
     </div>
