@@ -11,4 +11,9 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'Bridgelabz';
   logo = "1.jpg.jpg";
+  bridgelabzURL="https://www.bridgelabz.com"
+
+  openBridgeLabz(){
+    window.open(this.bridgelabzURL,'_blank')
+  }
 }
