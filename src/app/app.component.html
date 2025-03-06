@@ -228,6 +228,10 @@
       <h1>Hello from {{ title }}</h1>
       <img [src]="logo" width="200" height="200" (click)="openBridgeLabz()" style="cursor:pointer;">
       <p>Congratulations Udit Patel! Your app is running. 🎉</p>
+      <label >Enter your name </label>
+      <input type="text" [(ngModel)]="username" placeholder="username">
+
+      <p>Your name is {{username}}</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
